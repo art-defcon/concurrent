@@ -3,6 +3,9 @@ using System.Diagnostics;
 
 namespace CSharpLibrary
 {
+    /// <summary>
+    /// Helper class to check frequency system is running at.
+    /// </summary>
     public static class Threadhelper
     {
         public static void DisplayTimerProperties()

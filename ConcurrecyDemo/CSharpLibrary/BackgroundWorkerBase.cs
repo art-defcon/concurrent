@@ -3,10 +3,16 @@ using System.Threading;
 
 namespace CSharpLibrary
 {
+    /// <summary>
+    /// Background worker implmentation
+    /// </summary>
     public abstract class BackgroundWorkerBase
     {
         private Thread _thread;
 
+        /// <summary>
+        /// Start the thread running DoWork
+        /// </summary>
         public void Run()
         {
             try
@@ -18,6 +24,7 @@ namespace CSharpLibrary
             }
             catch (ThreadAbortException t)
             {
+                // Must always rethrow ThreadAbortExceptions
                 throw;
             }
             catch (Exception e)

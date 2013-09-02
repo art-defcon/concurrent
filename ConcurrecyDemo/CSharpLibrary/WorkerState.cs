@@ -1,5 +1,8 @@
 ﻿namespace CSharpLibrary
 {
+    /// <summary>
+    /// Dto class for transporting data from the backgroundworker.
+    /// </summary>
     public class WorkerState
     {
         public WorkerState(string status, int count, long countPerSec, bool running)

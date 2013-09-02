@@ -3,7 +3,11 @@ using ConcurrentClient.Annotations;
 
 namespace ConcurrentClient
 {
-    public class CurrentStateModel : INotifyPropertyChanged{
+    /// <summary>
+    /// This class implements <see cref="INotifyPropertyChanged"/> to let the View subscribe to bound data
+    /// </summary>
+    public class CurrentStateModel : INotifyPropertyChanged
+    {
         private bool _running;
         private long _cps;
         private long _count;

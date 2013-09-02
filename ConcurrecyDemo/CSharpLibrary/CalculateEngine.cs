@@ -3,6 +3,9 @@ using System.Threading;
 
 namespace CSharpLibrary
 {
+    /// <summary>
+    /// This is a simple implementation of the background worker class. This will just count some numbers and calulate the speed it does so.
+    /// </summary>
     public class CalculateEngine : BackgroundWorkerBase
     {
         private volatile int _count = 0;
