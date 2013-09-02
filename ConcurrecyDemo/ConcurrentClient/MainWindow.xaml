@@ -1,0 +1,15 @@
+﻿<Window x:Class="ConcurrentClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Closing="WindowClosing">
+    <StackPanel>
+        <Label Height="30" UseLayoutRounding="True" HorizontalAlignment="Left">Background service is running</Label>
+        <Label Name="Running" Content="{Binding Running}" Height="30" ></Label>
+        <Label Height="30" UseLayoutRounding="True" HorizontalAlignment="Left">Background service has counted</Label>
+        <Label Name="Count" Content="{Binding Count}" Height="30" ></Label>
+        <Label Height="30" UseLayoutRounding="True" HorizontalAlignment="Left">Background service is running count per sec</Label>
+        <Label Name="CountPerSec" Content="{Binding CountPerSec}" Height="30" ></Label>
+        <Button Height="30" Click="ButtonClick">Toggle Run</Button>
+    </StackPanel>
+    
+</Window>
